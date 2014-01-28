@@ -1,0 +1,15 @@
+---
+driver:
+  name: docker 
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-6.4
+
+suites:
+  - name: default
+    run_list:
+      - recipe[workstation::default]
+    attributes:
