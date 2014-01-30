@@ -77,7 +77,9 @@ end
    thunderbird
    VirtualBox
    dkms kernel-devel
-   tigervnc].each do |p|
+   tigervnc
+   gimp
+   graphviz GraphicsMagick].each do |p|
    # Probably need these too
    # lcms2.i686 nss-mdns.i686 mesa-libOSMesa.i686 gnutls.i686 libxslt.i686
   package p
