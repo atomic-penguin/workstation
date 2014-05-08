@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-node.default['vagrant']['url'] = 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.3_x86_64.rpm'
-node.default['vagrant']['checksum'] = 'a2057895601f46db4de22832ac462ee63e07e9905c1bfd11318290bd362137f9'
+node.default['vagrant']['url'] = 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.1_x86_64.rpm'
+node.default['vagrant']['checksum'] = 'b0e55b9ac0f24cf523eaec99b7ae2f2826d1f4964624a4d854a23a7fd0a57990'
 
 %w[git vim build-essential vagrant xml docker].each do |r|
   include_recipe r
