@@ -17,10 +17,10 @@
 # limitations under the License.
 #
 
-node.default['vagrant']['url'] = 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.1_x86_64.rpm'
-node.default['vagrant']['checksum'] = 'b0e55b9ac0f24cf523eaec99b7ae2f2826d1f4964624a4d854a23a7fd0a57990'
+node.default['vagrant']['url'] = 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.2_x86_64.rpm'
+node.default['vagrant']['checksum'] = '7233b3c97c8746b1b56c26878b68d250a43fe0f008d219fb2210f635720c6a56'
 
-%w[git vim build-essential vagrant xml docker].each do |r|
+%w[git vim build-essential vagrant xml docker omnibus].each do |r|
   include_recipe r
 end
 
@@ -79,7 +79,8 @@ end
    dkms kernel-devel
    tigervnc
    gimp
-   graphviz GraphicsMagick].each do |p|
+   graphviz GraphicsMagick
+   python-setuptools].each do |p|
    # Probably need these too
    # lcms2.i686 nss-mdns.i686 mesa-libOSMesa.i686 gnutls.i686 libxslt.i686
   package p
